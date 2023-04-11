@@ -18,7 +18,15 @@
   </head>
   <body>
     <div id="app">
-      <h1>{{text}}</h1>
+      <ul>
+        <li
+          class="email-list"
+          v-for="(email, index) in myEmailList"
+          :key="index"
+        >
+          {{email}}
+        </li>
+      </ul>
     </div>
 
     <script src="js/script.js"></script>
