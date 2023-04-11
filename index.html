@@ -23,6 +23,7 @@
           class="email-list"
           v-for="(email, index) in myEmailList"
           :key="index"
+          v-if="myEmailList.length === 10"
         >
           {{email}}
         </li>
